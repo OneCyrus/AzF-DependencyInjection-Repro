@@ -15,7 +15,8 @@ namespace AzureFunctions
     {
         public Inject(MD5DocumentHashProvider shouldGetObject)
         {
-            var test = shouldGetObject;
+            // this should return null and not throw an exception
+            var _shouldBeNull = shouldGetObject;
         }
 
         [FunctionName("Inject")]

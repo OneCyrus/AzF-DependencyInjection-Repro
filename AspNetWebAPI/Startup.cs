@@ -26,6 +26,7 @@ namespace AspNetWebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<MD5DocumentHashProvider>();
+            services.AddHttpContextAccessor();
             services.AddControllers();
         }
 
